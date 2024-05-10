@@ -19,3 +19,29 @@ function getComputerChoice(){
     }
     return choice;
 }
+
+function getHumanChoice(){
+    let p1Move = prompt("Enter your move: Rock, Paper, or Scissors").toLowerCase();
+    return p1Move;
+}
+
+while (true){
+    let computerMove = getComputerChoice();
+    let humanMove = getHumanChoice();
+    let computerWins = 0;
+    
+    if (computerMove == humanMove){
+        console.log("Tie");
+    }
+    else{
+        if ((computerMove == "rock" && humanMove == "paper")    ||
+            (computerMove == "paper" && humanMove == "scissors") || 
+            (computerMove == "scissors" && humanMove == "rock")) 
+        {
+            console.log("Computer Wins");
+        }
+        else{
+            console.log("Human Wins");
+        }
+    }
+}
