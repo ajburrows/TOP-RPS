@@ -1,3 +1,31 @@
+
+const container = document.getElementById("container");
+
+const redPara = document.createElement("p");
+redPara.textContent = "I'm red too!";
+redPara.style.color = "red";
+
+const blueH3 = document.createElement("h3");
+blueH3.style.color = "blue";
+blueH3.textContent = "I'm a blue h3!";
+
+const newDiv = document.createElement("div");
+newDiv.style.backgroundColor = "pink";
+newDiv.style.border = "black";
+
+container.appendChild(redPara);
+container.appendChild(blueH3);
+container.appendChild(newDiv);
+
+const h1Div = document.createElement("h1");
+const pDiv = document.createElement("p");
+h1Div.textContent = "I'm in a div";
+pDiv.textContent = "ME TOO!";
+
+
+
+
+
 console.log("Hello World");
 
 function getComputerChoice(){
