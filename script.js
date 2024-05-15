@@ -35,20 +35,21 @@ function getComputerChoice(){
 }
 
 function playRound(humanMove){
+    const winnerText = document.querySelector("#winnerText");
     let computerMove = getComputerChoice();
     
     if (computerMove == humanMove){
-        console.log("Tie");
+        winnerText.innerHTML = "Tie!";
     }
     else{
         if ((computerMove == "rock" && humanMove == "paper")    ||
             (computerMove == "paper" && humanMove == "scissors") || 
             (computerMove == "scissors" && humanMove == "rock")) 
         {
-            console.log("Computer Wins");
+            winnerText.innerHTML = "Computer Wins!";
         }
         else{
-            console.log("Human Wins");
+            winnerText.innerHTML = "Human Wins!";
         }
     }
 }
