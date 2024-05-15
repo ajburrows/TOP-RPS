@@ -23,10 +23,28 @@ h1Div.textContent = "I'm in a div";
 pDiv.textContent = "ME TOO!";
 
 
+const rockButton = document.querySelector("#rockButton");
+rockButton.addEventListener("click", function(){
+    playRound("rock");
+})
+
+const paperButton = document.querySelector("#paperButton");
+paperButton.addEventListener("click", function(){
+    playRound("paper");
+})
+
+const scissorsButton = document.querySelector("#scissorsButton");
+scissorsButton.addEventListener("click", function(){
+    playRound("scissors");
+})
+
+const btn3 = document.querySelector("#btn3");
+btn3.addEventListener("click", () =>{
+    alert("Hello World 3");
+});
 
 
 
-console.log("Hello World");
 
 function getComputerChoice(){
     let choiceNum = Math.floor(Math.random() * 3);
@@ -53,10 +71,8 @@ function getHumanChoice(){
     return p1Move;
 }
 
-while (true){
+function playRound(humanMove){
     let computerMove = getComputerChoice();
-    let humanMove = getHumanChoice();
-    let computerWins = 0;
     
     if (computerMove == humanMove){
         console.log("Tie");
@@ -73,3 +89,5 @@ while (true){
         }
     }
 }
+
+playRound();
