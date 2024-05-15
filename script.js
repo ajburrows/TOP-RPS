@@ -1,28 +1,3 @@
-
-const container = document.getElementById("container");
-
-const redPara = document.createElement("p");
-redPara.textContent = "I'm red too!";
-redPara.style.color = "red";
-
-const blueH3 = document.createElement("h3");
-blueH3.style.color = "blue";
-blueH3.textContent = "I'm a blue h3!";
-
-const newDiv = document.createElement("div");
-newDiv.style.backgroundColor = "pink";
-newDiv.style.border = "black";
-
-container.appendChild(redPara);
-container.appendChild(blueH3);
-container.appendChild(newDiv);
-
-const h1Div = document.createElement("h1");
-const pDiv = document.createElement("p");
-h1Div.textContent = "I'm in a div";
-pDiv.textContent = "ME TOO!";
-
-
 const rockButton = document.querySelector("#rockButton");
 rockButton.addEventListener("click", function(){
     playRound("rock");
@@ -37,13 +12,6 @@ const scissorsButton = document.querySelector("#scissorsButton");
 scissorsButton.addEventListener("click", function(){
     playRound("scissors");
 })
-
-const btn3 = document.querySelector("#btn3");
-btn3.addEventListener("click", () =>{
-    alert("Hello World 3");
-});
-
-
 
 
 function getComputerChoice(){
@@ -66,11 +34,6 @@ function getComputerChoice(){
     return choice;
 }
 
-function getHumanChoice(){
-    let p1Move = prompt("Enter your move: Rock, Paper, or Scissors").toLowerCase();
-    return p1Move;
-}
-
 function playRound(humanMove){
     let computerMove = getComputerChoice();
     
@@ -89,5 +52,3 @@ function playRound(humanMove){
         }
     }
 }
-
-playRound();
