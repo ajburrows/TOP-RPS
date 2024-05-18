@@ -14,14 +14,20 @@ div{
     display: flex;
 }
 
+.titleContainer{
+    justify-content: center;
+}
+
 .gameContainer{
     flex-direction: column;
+    align-items: center;
 }
 
 .interactionContainer{
     border: solid purple;
     background-color: lightskyblue;
     display: flex;
+    width: 75%;
 }
 
 .interactionCol{
@@ -29,4 +35,33 @@ div{
     flex-direction: column;
     border: solid darkslategray;
     background-color: lightsalmon;
+}
+
+/* ---------- SPACING ---------- */
+/*columns in interaction container*/
+.playerCol, .compCol{
+    width: 45%;
+}
+.vsCol{
+    width: 10%;
+}
+
+/* ---------- CENTERING ---------- */
+.playerMoveContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.playerText{
+    text-align: center;
+}
+
+.vsCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreContainer{
+    display: flex;
 }
