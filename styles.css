@@ -1,3 +1,32 @@
 body {
     display: flex;
+    flex-direction: column;
+}
+
+div{
+    border: solid darkolivegreen;
+    background-color: lightgoldenrodyellow;
+}
+
+.titleContainer, .gameContainer{
+    border: solid lightcoral;
+    background-color: lightgreen;
+    display: flex;
+}
+
+.gameContainer{
+    flex-direction: column;
+}
+
+.interactionContainer{
+    border: solid purple;
+    background-color: lightskyblue;
+    display: flex;
+}
+
+.interactionCol{
+    display: flex;
+    flex-direction: column;
+    border: solid darkslategray;
+    background-color: lightsalmon;
 }
