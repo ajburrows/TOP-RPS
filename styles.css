@@ -37,9 +37,16 @@ div{
     background-color: lightsalmon;
 }
 
+.compMoveContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .compMoveDisplayBox{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---------- SPACING ---------- */
@@ -59,7 +66,7 @@ div{
     width: 10%;
 }
 
-.moveButton{
+.moveButton, .compMoveDisplayBox{
     width: 75%;
     height: 75px;
     margin: 5px;
@@ -93,6 +100,11 @@ div{
 
 
 /* ---------- Appearance ---------- */
-.moveButton{
+.moveButton, .compMoveDisplayBox{
     border-radius: 10px;
+}
+
+.compMoveDisplayBox{
+    background-color: #efefef;
+    border: solid black 2px;
 }

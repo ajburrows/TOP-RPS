@@ -19,19 +19,24 @@ scissorsButton.addEventListener("click", function(){
 
 function getComputerChoice(){
     let choiceNum = Math.floor(Math.random() * 3);
+    const compMoveText = document.querySelector(".compMoveText");
     let choice;
     switch (choiceNum){
         case 0:
             choice = "rock";
+            compMoveText.innerHTML = "Rock";
             break;
         case 1:
             choice = "paper";
+            compMoveText.innerHTML = "Paper";
             break;
         case 2:
             choice = "scissors";
+            compMoveText.innerHTML = "Scissors";
             break;
         default:
             choice = "Invalid choice greater than 2";
+            compMoveText.innerHTML = choice;
             break;
     }
     return choice;
