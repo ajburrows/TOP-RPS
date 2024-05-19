@@ -37,10 +37,19 @@ div{
     background-color: lightsalmon;
 }
 
+
+.compMoveDisplayBox{
+    display: flex;
+}
+
 /* ---------- SPACING ---------- */
 
 .gameContainer{
     padding-top: 50px;
+}
+
+.compMoveContainer{
+    height: 275px;
 }
 
 .playerCol, .compCol{
