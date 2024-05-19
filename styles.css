@@ -38,7 +38,11 @@ div{
 }
 
 /* ---------- SPACING ---------- */
-/*columns in interaction container*/
+
+.gameContainer{
+    padding-top: 50px;
+}
+
 .playerCol, .compCol{
     width: 45%;
 }
@@ -46,10 +50,21 @@ div{
     width: 10%;
 }
 
-/* ---------- CENTERING ---------- */
+.moveButton{
+    width: 75%;
+    height: 75px;
+    margin: 5px;
+}
+
+.playerMoveContainer{
+    padding: 10px;
+}
+
+/* ---------- Alignment ---------- */
 .playerMoveContainer{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .playerText{
@@ -64,4 +79,11 @@ div{
 
 .scoreContainer{
     display: flex;
+    justify-content: space-around
+}
+
+
+/* ---------- Appearance ---------- */
+.moveButton{
+    border-radius: 10px;
 }
